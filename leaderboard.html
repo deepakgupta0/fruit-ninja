@@ -8,25 +8,8 @@
     <title>LeaderBoard</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="common.css">
     <style>
-        * {
-            margin: 0;
-        }
-
-        html {
-            background: radial-gradient(circle, #fff, #ccc);
-            background: -webkit-radial-gradient(circle, #fff,
-                    #ccc);
-            background: -o-radial-gradient(circle, #fff, #ccc);
-            background: -moz-radial-gradient(circle, #fff, #ccc);
-            height: 100%;
-        }
-
-        body {
-            font-family: "Sofia", sans-serif;
-            font-size: 1.1rem;
-            text-align: center;
-        }
 
         #container {
             height: 575px;
@@ -80,27 +63,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable({
-                "lengthMenu": [3, 5, 7],
-                "pageLength": 5
-            });
-        });
-        let rankListFromStorage = JSON.parse(localStorage.getItem("USERSCORE"));
-        if(rankListFromStorage)
-        {
-            rankListFromStorage.sort((a, b) =>  b.uscore-a.uscore );
-        }
-
-        //looping and appending in tbody
-        for(let i = 0;i<rankListFromStorage.length;i++)
-        {
-            let userObj =  rankListFromStorage[i];
-            let row = `<tr><td>${i+1}</td><td>${userObj.uname}</td><td>${userObj.uscore}</td></tr>`
-            $("tbody").append(row);
-        }
-    </script>
+    <script src="leaderboard.js"></script>
 </body>
 
 </html>

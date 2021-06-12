@@ -1,0 +1,18 @@
+*{
+    margin : 0;
+}
+html{
+    background: radial-gradient(circle, #fff, #ccc);
+    background: -webkit-radial-gradient(circle, #fff, 
+   #ccc); 
+    background: -o-radial-gradient(circle, #fff, #ccc); 
+    background: -moz-radial-gradient(circle, #fff, #ccc);
+    height: 100%;
+   }
+body{
+    font-size: 16px;
+    cursor: url(images/sword.png),auto;
+    font-family: cursive, sans-serif;
+    height: 100%;
+
+}
