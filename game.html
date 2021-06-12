@@ -1,0 +1,60 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fruits Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.
+4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.
+4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+
+<body>
+    <div id="transparent-screen"></div>
+    <div id="game-end-screen">
+        <div id="container">
+            <h2 id="uname"></h2>
+            <div id="score">
+                Score: <span id="scorevalue">0</span>
+            </div>
+            <div id="trialsLeft">
+            </div>
+            <div id="fruitsContainer">
+                <img id="fruit1" class="fruit">
+                <div id="topic">
+                    <h1>Fruit Ninja 🐱‍👤</h1>
+                    <span>Made with ♥ by <b>Deepak Gupta</b></span>
+                </div>
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            <div id="gameOver">
+                <div class="wrapper">
+                    <div>
+                        <i class="fas fa-redo fa-sm" id="reload"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-trophy fa-sm" id="leaderboard"></i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="slicesound">
+        <source src="audio/slicefruit.mp3" type="audio/mp3">
+        </source>
+        <source src="audio/slicefruit.ogg" type="audio/ogg">
+        </source>
+    </audio>
+    <script src="https://kit.fontawesome.com/c5a9e27580.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body

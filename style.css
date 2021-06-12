@@ -1,0 +1,199 @@
+*{
+    margin : 0;
+}
+html{
+    background: radial-gradient(circle, #fff, #ccc);
+    background: -webkit-radial-gradient(circle, #fff, 
+   #ccc); 
+    background: -o-radial-gradient(circle, #fff, #ccc); 
+    background: -moz-radial-gradient(circle, #fff, #ccc);
+    height: 100%;
+   }
+body{
+    font-size: 16px;
+    cursor: url(images/sword.png),auto;
+    font-family: cursive, sans-serif;
+    height: 100%;
+
+}
+#topic h1{
+    font-family: "Sofia", sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+#container{
+    height: 575px;
+    width: 750px;
+    background: radial-gradient(circle, #56CCF2, #2F80ED);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    -moz-box-shadow: 0px 4px 0px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 0px 0px #009de4;
+    position: relative;
+
+}
+#topic{
+    width: 100%;
+}
+
+#score{
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 11px;
+    position: absolute;
+    left: 690px;
+    border-radius:25px;
+    box-shadow: 0px 4px 0px #9da853;
+    -moz-box-shadow: 0px 4px 0px #9da853;
+    -webkit-box-shadow: 0px 4px 0px #9da853;
+}
+
+#fruitsContainer{
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    /* display: flex; */
+    color: black;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    /* justify-content: center; */
+
+   }
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color: #B481D9;
+    margin: 10px auto;
+    border-radius:20px;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153a8;
+    -moz-box-shadow: 0px 4px #8153a8;
+    -webkit-box-shadow: 0px 4px #8153a8;
+   }
+
+/* #startreset:hover{
+   background-color: #9C89F6;
+   color: white;
+   box-shadow: 0px 4px #6b54d3;
+   -moz-box-shadow: 0px 4px #6b54d3;
+   -webkit-box-shadow: 0px 4px #6b54d3;
+   } */
+/* #startreset:active,#instruction:active{
+    background-color: #9C89F6;
+    color: black;
+    box-shadow: 0px 0px #6b54d3;
+    -moz-box-shadow: 0px 0px #6b54d3;
+    -webkit-box-shadow: 0px 0px #6b54d3;
+    /* top: 40px; }*/
+#startreset{
+    width: 78px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    border-radius: 3px;
+    border-radius:25px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s; 
+   }
+
+#trialsLeft{
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    background-color: #F1FF92;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+    text-align: center;
+   }
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#36D1DC, #5B86E5);
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    background: -o-linear-gradient(#36D1DC, #5B86E5);
+    background: -moz-linear-gradient(#36D1DC, #5B86E5);
+    color: white;
+    font-size: 3rem;
+    /* line-height:5rem; */
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    z-index: 5;
+    display: none;
+    border-radius: 25px;
+
+}
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+   }
+
+   .fruit{
+    display: none;
+    position: absolute;
+   }
+
+.transparent-screen{
+    position: fixed;
+    z-index: 2;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#topic{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+}
+
+#uname{
+    width:50%;
+    position: absolute;
+    left:calc(50% - 25%);
+    padding: 11px;
+    font-family: "Sofia", sans-serif;
+    font-size: 1.4rem;
+    color:white;
+
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+
+#game-end-screen{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
